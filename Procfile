@@ -1,0 +1,1 @@
+web: gunicorn Proyecto_distribuidos.wsgi.py --log-file -

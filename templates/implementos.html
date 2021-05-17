@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/images.css' %} ">
+    <form class="row g-3" method="POST" action="{% url 'createPending' %}">
+        <div class="wraper">
+            <div class="row">
+                <div class="col">
+                    Balon de Baloncesto<br>
+                    <img class="todas" src="{% static 'images/balon_baloncesto.jpg' %}">
+                </div>
+                <div class="col">
+                    <p>Cantidad disponible:</p><br>
+                    Cantidad prestada:
+                </div>
+                <div class="col botons1">
+                    <button type="submit" class="btn btn-primary botons2" value="1" name="baloncesto" onclick="{% url 'createPending' %}">Pedir</button>
+                </div>
+            </div>
+        </div>
+        <div class="wraper">
+            <div class="row">
+                <div class="col">
+                    Balon de Futbol<br>
+                    <img class="todas" src="{% static 'images/balon_futbol.jpg' %}">
+                </div>
+                <div class="col">
+                    <p>Cantidad disponible:</p><br>
+                    Cantidad prestada:
+                </div>
+                <div class="col botons1">
+                    <button type="submit" class="btn btn-primary botons2" value="2" name="futbol" onclick="{% url 'createPending' %}">Pedir</button>
+                </div>
+            </div>
+        </div>
+        <div class="wraper">
+            <div class="row">
+                <div class="col">
+                    Balon de Microfutbol<br>
+                    <img class="todas" src="{% static 'images/balon_micro.jpg' %}">
+                </div>
+                <div class="col">
+                    <p>Cantidad disponible:</p><br>
+                    Cantidad prestada:
+                </div>
+                <div class="col botons1">
+                    <button type="submit" class="btn btn-primary botons2" value="3" onclick="{% url 'createPending' %}" name="micro">pedir</button>
+                </div>
+            </div>
+        </div>
+        <div class="wraper">
+            <div class="row">
+                <div class="col">
+                    Fichas de Ajedrez<br>
+                    <img class="todas" src="{% static 'images/ajedrez.jpg' %}">
+                </div>
+                <div class="col">
+                    <p>Cantidad disponible:</p><br>
+                    Cantidad prestada:
+                </div>
+                <div class="col botons1">
+                    <button type="submit" onclick="{% url 'createPending' %}" class="btn btn-primary botons2" value="4" name="ajedrez">Pedir</button>
+                </div>
+            </div>
+        </div>
+        <div class="wraper">
+            <div class="row">
+                <div class="col">
+                    Fichas de Parchis<br>
+                    <img class="todas" src="{% static 'images/parchis.jpg' %}">
+                </div>
+                <div class="col">
+                    <p>Cantidad disponible:</p><br>
+                    Cantidad prestada:
+                </div>
+                <div class="col botons1">
+                    <button type="submit" onclick="{% url 'createPending' %}" class="btn btn-primary botons2" value="5" name="parchis">Pedir</button>
+                </div>
+            </div>
+        </div>
+        <div class="wraper">
+            <div class="row">
+                <div class="col">
+                    Jenga<br>
+                    <img class="todas" src="{% static 'images/jenga.jpg' %}">
+                </div>
+                <div class="col">
+                    <p>Cantidad disponible:</p><br>
+                    Cantidad prestada:
+                </div>
+                <div class="col botons1">
+                    <button type="submit" value="6" class="btn btn-primary botons2" onclick="{% url 'createPending' %}" name="jenga">Pedir</button>
+                </div>
+            </div>
+        </div>
+        <div class="wraper">
+            <div class="row">
+                <div class="col">
+                    Raquetas de ping pong<br>
+                    <img class="todas" src="{% static 'images/raquetas_ping_pong.jpg' %}">
+                </div>
+                <div class="col">
+                    <p>Cantidad disponible:</p><br>
+                    Cantidad prestada:
+                </div>
+                <div class="col botons1">
+                    <button type="submit" onclick="{% url 'createPending' %}" value="7" class="btn btn-primary botons2" name="pingpong">Pedir</button>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

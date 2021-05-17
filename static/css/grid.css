@@ -1,0 +1,25 @@
+.wraper {
+    display: grid;
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 10px;
+    border-radius: 5px;
+    grid-template-columns:1300px 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(160px, auto);
+    background: white;
+}
+
+.home {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.botons1 {
+    display: flex;
+    justify-content: center;
+}
+.botons2 {
+    align-self: center;
+}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<form class="row g-3" method="POST" action="{% url 'login' %}">
+  <div class="col-auto">
+    <label for="user" class="visually-hidden">User</label>
+    <input type="text" class="form-control" id="user" value="" placeholder="User" name="user">
+  </div>
+  <div class="col-auto">
+    <label for="psswrd" class="visually-hidden">Password</label>
+    <input type="password" class="form-control" id="psswrd" value="" placeholder="Password" name="pass">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Ingresar</button>
+  </div>
+</form>
+{% endblock %}

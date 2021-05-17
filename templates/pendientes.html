@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/images.css' %} ">
+    <form class="row g-3" method="POST" action="{% url 'deletePending' %}">
+        <div class="wraper">
+            <div class="row">
+                <div class="col">
+                    Pendiente: {{ nombre }}<br>
+                    <img class="todas" src="{% static 'images/' %}{{ nombre }}.jpg">
+                </div>
+                <div class="col botons1">
+                    <button type="submit" class="btn btn-primary botons2" name="devolver">Devolver</button>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
